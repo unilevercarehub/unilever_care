@@ -1,8 +1,8 @@
 const SUPABASE_URL =
-    "MASUKKAN_SUPABASE_URL";
+    "https://ertcnkevohvyzrdcbvhw.supabase.co/rest/v1/";
 
 const SUPABASE_KEY =
-    "MASUKKAN_SUPABASE_ANON_KEY";
+    "sb_publishable_tSxwXRj2o5yOJ-BRLTeYcQ_elVCfkwr";
 
 
 const {
