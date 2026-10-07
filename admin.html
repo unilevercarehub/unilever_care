@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>
+    Care Hub - Admin
+</title>
+
+<link
+    rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="brand">
+
+<strong>
+Care Hub Admin
+</strong>
+
+<small>
+Dashboard Pengaduan
+</small>
+
+</div>
+
+<nav>
+
+<a href="index.html">
+Aplikasi
+</a>
+
+<button
+    class="button primary"
+    onclick="logout()">
+
+Keluar
+
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="section">
+
+<div class="section-title">
+
+<span>
+ADMIN
+</span>
+
+<h2>
+Dashboard Pengaduan
+</h2>
+
+<p>
+Kelola dan tindak lanjuti pengaduan konsumen.
+</p>
+
+</div>
+
+
+<!-- LOGIN -->
+
+<div
+    id="loginBox"
+    class="form-card">
+
+<h3>
+Login Administrator
+</h3>
+
+<br>
+
+<input
+    id="adminEmail"
+    type="email"
+    placeholder="Email administrator">
+
+<br><br>
+
+<input
+    id="adminPassword"
+    type="password"
+    placeholder="Password">
+
+<br><br>
+
+<button
+    class="button primary"
+    onclick="login()">
+
+Login
+
+</button>
+
+</div>
+
+
+<!-- DASHBOARD -->
+
+<div
+    id="dashboard"
+    hidden>
+
+
+<div class="statistics">
+
+<div>
+
+<strong id="adminTotal">
+0
+</strong>
+
+<span>
+Total
+</span>
+
+</div>
+
+
+<div>
+
+<strong id="adminReceived">
+0
+</strong>
+
+<span>
+Diterima
+</span>
+
+</div>
+
+
+<div>
+
+<strong id="adminDone">
+0
+</strong>
+
+<span>
+Selesai
+</span>
+
+</div>
+
+</div>
+
+
+<br><br>
+
+
+<div class="form-card">
+
+<h3>
+Daftar Pengaduan
+</h3>
+
+<br>
+
+
+<input
+    id="searchBox"
+    placeholder="Cari nomor tiket / nama / kategori..."
+    oninput="filterComplaints()">
+
+
+<br><br>
+
+
+<div
+    style="overflow-x:auto;">
+
+<table
+    id="complaintTable"
+    style="width:100%;border-collapse:collapse;">
+
+<thead>
+
+<tr>
+
+<th style="padding:10px;text-align:left;">
+Tiket
+</th>
+
+<th style="padding:10px;text-align:left;">
+Nama
+</th>
+
+<th style="padding:10px;text-align:left;">
+Kategori
+</th>
+
+<th style="padding:10px;text-align:left;">
+Status
+</th>
+
+<th style="padding:10px;text-align:left;">
+Tanggal
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div
+    id="detailBox"
+    class="form-card"
+    hidden>
+
+<h3>
+Detail Pengaduan
+</h3>
+
+<div id="detailContent"></div>
+
+</div>
+
+
+</div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>
