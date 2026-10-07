@@ -57,46 +57,44 @@ document
                     ticketData;
 
 
-                const complaint = {
+               const complaint = {
+    ticket_number: ticket,
 
-                    ticket_number: ticket,
+    nama:
+        document
+            .getElementById("name")
+            .value
+            .trim(),
 
-                    name:
-                        document
-                        .getElementById("name")
-                        .value
-                        .trim(),
+    email:
+        document
+            .getElementById("email")
+            .value
+            .trim(),
 
-                    email:
-                        document
-                        .getElementById("email")
-                        .value
-                        .trim(),
+    telepon:
+        document
+            .getElementById("phone")
+            .value
+            .trim(),
 
-                    phone:
-                        document
-                        .getElementById("phone")
-                        .value
-                        .trim(),
+    kategori:
+        document
+            .getElementById("category")
+            .value,
 
-                    category:
-                        document
-                        .getElementById("category")
-                        .value,
+    judul:
+        document
+            .getElementById("title")
+            .value
+            .trim(),
 
-                    title:
-                        document
-                        .getElementById("title")
-                        .value
-                        .trim(),
-
-                    description:
-                        document
-                        .getElementById("description")
-                        .value
-                        .trim()
-
-                };
+    deskripsi:
+        document
+            .getElementById("description")
+            .value
+            .trim()
+};
 
 
                 const {
