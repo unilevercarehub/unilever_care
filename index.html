@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Unilever Care Hub - Prototype
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <div class="brand">
+
+            <strong>
+                Care Hub
+            </strong>
+
+            <small>
+                Ruang Pengaduan Konsumen
+            </small>
+
+        </div>
+
+        <nav>
+
+            <a href="#beranda">
+                Beranda
+            </a>
+
+            <a href="#pengaduan">
+                Buat Pengaduan
+            </a>
+
+            <a href="#status">
+                Cek Status
+            </a>
+
+            <a href="#tentang">
+                Tentang
+            </a>
+
+            <a
+                href="admin.html"
+                class="admin-link">
+
+                Admin
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section
+    id="beranda"
+    class="hero">
+
+    <div>
+
+        <span class="badge">
+            CONSUMER CARE
+        </span>
+
+        <h1>
+            Suara Konsumen
+            <span>Perlu Didengar.</span>
+        </h1>
+
+        <p>
+
+            Sampaikan keluhan, pertanyaan,
+            atau aspirasi Anda melalui sistem
+            pengaduan yang lebih terstruktur
+            dan transparan.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#pengaduan"
+                class="button primary">
+
+                Buat Pengaduan
+
+            </a>
+
+            <a
+                href="#status"
+                class="button secondary">
+
+                Cek Status
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <h3>
+            Alur Pengaduan
+        </h3>
+
+        <div class="flow">
+
+            <div>
+                <b>1</b>
+                <span>Diterima</span>
+            </div>
+
+            <div>
+                <b>2</b>
+                <span>Diverifikasi</span>
+            </div>
+
+            <div>
+                <b>3</b>
+                <span>Ditindaklanjuti</span>
+            </div>
+
+            <div>
+                <b>4</b>
+                <span>Selesai</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="statistics">
+
+    <div>
+
+        <strong id="totalReports">
+            -
+        </strong>
+
+        <span>
+            Pengaduan
+        </span>
+
+    </div>
+
+    <div>
+
+        <strong id="resolvedReports">
+            -
+        </strong>
+
+        <span>
+            Selesai
+        </span>
+
+    </div>
+
+    <div>
+
+        <strong>
+            3 Hari
+        </strong>
+
+        <span>
+            Target Respons
+        </span>
+
+    </div>
+
+</section>
+
+
+<section
+    id="pengaduan"
+    class="section">
+
+    <div class="section-title">
+
+        <span>
+            01
+        </span>
+
+        <h2>
+            Buat Pengaduan
+        </h2>
+
+        <p>
+            Isi formulir dengan informasi
+            yang jelas agar laporan dapat
+            diproses dengan baik.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <form id="complaintForm">
+
+            <div class="form-grid">
+
+                <div>
+
+                    <label>
+                        Nama Lengkap *
+                    </label>
+
+                    <input
+                        id="name"
+                        required
+                        placeholder="Nama lengkap">
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Email *
+                    </label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="email@example.com">
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Nomor WhatsApp
+                    </label>
+
+                    <input
+                        id="phone"
+                        placeholder="08xxxxxxxxxx">
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Kategori *
+                    </label>
+
+                    <select
+                        id="category"
+                        required>
+
+                        <option value="">
+                            Pilih kategori
+                        </option>
+
+                        <option>
+                            Produk
+                        </option>
+
+                        <option>
+                            Kemasan
+                        </option>
+
+                        <option>
+                            Lingkungan
+                        </option>
+
+                        <option>
+                            Pelayanan
+                        </option>
+
+                        <option>
+                            Lainnya
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="full">
+
+                    <label>
+                        Judul Pengaduan *
+                    </label>
+
+                    <input
+                        id="title"
+                        required
+                        placeholder="Tuliskan judul pengaduan">
+
+                </div>
+
+
+                <div class="full">
+
+                    <label>
+                        Kronologi *
+                    </label>
+
+                    <textarea
+                        id="description"
+                        required
+                        placeholder="Jelaskan masalah secara rinci..."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="privacy">
+
+                🔒 Data yang diberikan digunakan
+                untuk pengelolaan pengaduan pada
+                prototype ini. Jangan memasukkan
+                password, nomor kartu, atau data
+                keuangan.
+
+            </div>
+
+
+            <button
+                class="button primary"
+                type="submit">
+
+                Kirim Pengaduan
+
+            </button>
+
+        </form>
+
+
+        <div
+            id="successBox"
+            class="success"
+            hidden>
+
+            <h3>
+                Pengaduan Berhasil Dikirim
+            </h3>
+
+            <p>
+                Simpan nomor tiket berikut:
+            </p>
+
+            <strong id="ticketResult">
+            </strong>
+
+            <button
+                class="button secondary"
+                onclick="copyTicket()">
+
+                Salin Nomor Tiket
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    id="status"
+    class="section light">
+
+    <div class="section-title">
+
+        <span>
+            02
+        </span>
+
+        <h2>
+            Cek Status
+        </h2>
+
+        <p>
+            Gunakan nomor tiket dan email
+            yang digunakan saat membuat
+            pengaduan.
+        </p>
+
+    </div>
+
+
+    <div class="tracking">
+
+        <input
+            id="ticket"
+            placeholder="UCH-20261007-XXXXXX">
+
+        <input
+            id="checkEmail"
+            type="email"
+            placeholder="Email Anda">
+
+        <button
+            class="button primary"
+            onclick="checkComplaint()">
+
+            Cek Pengaduan
+
+        </button>
+
+    </div>
+
+
+    <div
+        id="statusResult"
+        class="status-result"
+        hidden>
+
+    </div>
+
+</section>
+
+
+<section
+    id="tentang"
+    class="section">
+
+    <div class="section-title">
+
+        <span>
+            03
+        </span>
+
+        <h2>
+            Prinsip Care Hub
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="info-card">
+
+            <div>
+                🔎
+            </div>
+
+            <h3>
+                Transparansi
+            </h3>
+
+            <p>
+                Konsumen dapat memantau
+                perkembangan pengaduan
+                menggunakan nomor tiket.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div>
+                🤝
+            </div>
+
+            <h3>
+                Akuntabilitas
+            </h3>
+
+            <p>
+                Setiap pengaduan memiliki
+                status dan riwayat tindak
+                lanjut yang dapat ditelusuri.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div>
+                🔐
+            </div>
+
+            <h3>
+                Perlindungan Data
+            </h3>
+
+            <p>
+                Sistem tidak menampilkan
+                data pribadi konsumen
+                kepada pengguna lain.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <strong>
+        Care Hub
+    </strong>
+
+    <p>
+        Prototype akademik — bukan kanal resmi
+        Unilever Indonesia.
+    </p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
